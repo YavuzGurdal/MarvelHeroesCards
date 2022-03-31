@@ -63,7 +63,7 @@ input[type="text"] {
 
 .contents {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 kolon var demek */
   gap: 1rem;
 }
 
@@ -92,7 +92,7 @@ input[type="text"] {
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /* 3 boyutlu gorunum icin */
 }
 
 .content:hover .content-inner {
@@ -105,16 +105,16 @@ input[type="text"] {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* arkada kalan resmin gorunmemesi icin */
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: auto; /* aciklama uzunsa scroll olusuyor*/
 }
 
 .content-back {
   background-color: #333;
   color: white;
   padding: 20px;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* donus efekti vermek icin */
 }
 
 .content li {

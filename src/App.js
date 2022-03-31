@@ -2,10 +2,11 @@ import './App.css';
 import Header from './components/Header';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import CharacterTable from './components/CharacterTable';
 
 const hash = '23bc99dc01f52fc8e6adb3d3052a5877'
 function App() {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState([]) // axios la aldigim verileri burada tutuyorum
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <CharacterTable items={items} isLoading={isLoading} /> {/* items ve isLoading'i props ile CharacterTable componentine gonderiyorum */}
     </div>
   );
 }
