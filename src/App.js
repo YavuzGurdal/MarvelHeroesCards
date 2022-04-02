@@ -15,12 +15,12 @@ function App() {
     // gelen datayi bekleyecegim icin async yaptim
     const fetch = async () => {
       if (query === '') {
-        const result = await axios(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=9040d47066323e06a3d244d25fca2e7c&hash=${hash}`)
+        const result = await axios(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=9040d47066323e06a3d244d25fca2e7c&hash=${hash}`)
         console.log(result.data.data.results)
         setItems(result.data.data.results) // gelen datayi items e atiyorum
         setIsLoading(false)
       } else {
-        const result = await axios(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${query}&ts=1&apikey=9040d47066323e06a3d244d25fca2e7c&hash=${hash}`)
+        const result = await axios(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${query}&ts=1&apikey=9040d47066323e06a3d244d25fca2e7c&hash=${hash}`)
         console.log(result.data.data.results)
         setItems(result.data.data.results) // gelen datayi items e atiyorum
         setIsLoading(false)
