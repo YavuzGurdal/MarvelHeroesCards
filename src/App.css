@@ -107,7 +107,7 @@ input[type="text"] {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; /* arkada kalan resmin gorunmemesi icin */
   overflow: hidden;
-  overflow-y: auto; /* aciklama uzunsa scroll olusuyor*/
+  /*overflow-y: auto; /* aciklama uzunsa scroll olusuyor*/
 }
 
 .content-back {
@@ -115,6 +115,7 @@ input[type="text"] {
   color: white;
   padding: 20px;
   transform: rotateY(180deg); /* donus efekti vermek icin */
+  overflow-y: auto; /* aciklama uzunsa scroll olusuyor*/
 }
 
 .content li {
