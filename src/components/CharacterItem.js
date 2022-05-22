@@ -1,6 +1,7 @@
 import React from 'react'
 
 const CharacterItem = ({ item }) => { // propsla gelen itemi yakaliyorum
+
     return (
         <div className='content'>
             <div className='content-inner'>
