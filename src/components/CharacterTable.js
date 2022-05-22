@@ -2,7 +2,7 @@ import React from 'react'
 import CharacterItem from './CharacterItem'
 
 const CharacterTable = ({ items, isLoading }) => {
-    console.log(items)
+
     return (
         isLoading ? <h1>Loading ...</h1> :
             <section className='contents'>
